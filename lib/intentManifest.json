@@ -1,0 +1,71 @@
+{
+  "site": {
+    "sampleSize": 0,
+    "intents": [
+      {
+        "id": "dev",
+        "signals": [
+          {
+            "type": "BEH",
+            "freq": "always",
+            "scope": "visitor",
+            "str": 50
+          }
+        ]
+      },
+      {
+        "id": "marketer",
+        "signals": [
+          {
+            "type": "BEH",
+            "freq": "always",
+            "scope": "visitor",
+            "str": 50
+          }
+        ]
+      },
+      {
+        "id": "cfp_utm",
+        "signals": [
+          {
+            "type": "QS",
+            "freq": "visit",
+            "scope": "visitor",
+            "str": 25,
+            "value": {
+              "cs": true,
+              "expr": "unfrmconf",
+              "type": "exact"
+            },
+            "parameter": "utm_campaign"
+          }
+        ]
+      },
+      {
+        "id": "registration",
+        "signals": [
+          {
+            "type": "CK",
+            "freq": "visit",
+            "scope": "visit",
+            "str": 100,
+            "value": {
+              "cs": true,
+              "expr": "true",
+              "type": "exact"
+            },
+            "parameter": "unfrmconf_registered"
+          }
+        ]
+      }
+    ],
+    "enrichments": [
+      {
+        "name": "Country"
+      },
+      {
+        "name": "Major"
+      }
+    ]
+  }
+}
