@@ -6,6 +6,27 @@
         "id": "dev",
         "signals": [
           {
+            "type": "EVT",
+            "freq": "always",
+            "scope": "visitor",
+            "str": 50,
+            "label": {
+              "cs": false,
+              "expr": "EventTestLabel",
+              "type": "exact"
+            },
+            "value": {
+              "cs": false,
+              "expr": "EventTestValue",
+              "type": "exact"
+            },
+            "category": {
+              "cs": false,
+              "expr": "EventTestCategory",
+              "type": "exact"
+            }
+          },
+          {
             "type": "BEH",
             "freq": "always",
             "scope": "visitor",
@@ -61,10 +82,15 @@
     ],
     "enrichments": [
       {
-        "name": "Country"
+        "name": "Language"
       },
       {
-        "name": "Major"
+        "name": "Country"
+      }
+    ],
+    "tests": [
+      {
+        "name": "Why Attend Photo Location Test"
       }
     ]
   }

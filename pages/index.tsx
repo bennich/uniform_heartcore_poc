@@ -18,7 +18,7 @@ export default function index(props) {
 }
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const frontPage = await MyClient.delivery.content.byId('d9a1929d-8fbd-4195-9724-226ad23203b8')
+  const frontPage = await MyClient.delivery.content.byId('957ae98c-c720-4530-9edd-68ff5e9cdbb1')
     const variant = frontPage.heroVariants as any[];
 
   const components = variant.map<HeroFields>(child => 

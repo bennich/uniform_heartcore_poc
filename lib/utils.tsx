@@ -4,7 +4,7 @@ interface intentJson
 {
   contentTypeAlias: string,
   unfrmOptIntentTag: string, 
-  unfrmOptIntentTagStrenght: string
+  unfrmOptIntentTagStrength: string
 }
 
 export function translateIntentTag(intenttag){
@@ -17,7 +17,7 @@ export function translateIntentTag(intenttag){
     {
           intents: {
             [intentdata.unfrmOptIntentTag]: {
-              str: intentdata.unfrmOptIntentTagStrenght
+              str: intentdata.unfrmOptIntentTagStrength
             }
           },
   }
